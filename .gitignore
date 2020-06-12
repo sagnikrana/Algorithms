@@ -137,3 +137,4 @@ dmypy.json
 /by_learners
 .rb
 .pdf
+.DS_Store
