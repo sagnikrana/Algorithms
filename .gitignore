@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# different files
+.cpp
+.hs
+.java
+.kt
+/by_learners
+.rb
+.pdf
