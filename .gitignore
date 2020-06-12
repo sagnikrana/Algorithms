@@ -129,6 +129,7 @@ dmypy.json
 .pyre/
 
 # different files
+.DS_Store
 .cpp
 .hs
 .java
