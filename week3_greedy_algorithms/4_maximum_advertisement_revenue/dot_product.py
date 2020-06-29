@@ -4,10 +4,16 @@ import sys
 
 def max_dot_product(a, b):
     #write your code here
-    res = 0
-    for i in range(len(a)):
-        res += a[i] * b[i]
-    return res
+    revenue = 0
+
+    for _ in range(len(a)):
+        max_cost = max(a)
+        max_click = max(b)
+        revenue = revenue + (max_cost * max_click)
+        del a[a.index(max_cost)]
+        del b[b.index(max_click)]
+    return revenue
+        
 
 if __name__ == '__main__':
     input = sys.stdin.read()
@@ -16,4 +22,3 @@ if __name__ == '__main__':
     a = data[1:(n + 1)]
     b = data[(n + 1):]
     print(max_dot_product(a, b))
-    
